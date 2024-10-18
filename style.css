@@ -1,0 +1,234 @@
+body{
+  position: absolute;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: black; /* Background color */
+  overflow: hidden; /* Prevent body scrolling */
+  /* background-color:rgb(8, 0, 255);  */
+
+}
+.canvas-container {
+  position: relative;
+  width: 40%; 
+  height: 50%;
+}
+
+canvas {
+  width: 100%; /* Full width of the container */
+  height: 100%; /* Full height of the container */
+  display: block;
+}
+.navbar {
+  position: sticky;
+  z-index: 0; /* Ensures the navbar is above other content */
+  display: flex;
+  flex-direction: column;
+  background-color: #33333300; /* Change as needed */
+  padding: 10px;
+  height:30%;
+  color: white;
+}
+
+/* Each row of the navbar */
+.nav-row {
+  display: flex;
+  justify-content: space-between; /* Distributes items */
+  align-items: center;
+  padding: 50px 5px;
+  z-index:0;
+
+}
+
+logo {
+  background-color: #ffffff00; /* Dark background */
+  align-items: flex-end; /* Vertically center items */
+  width: 100%;
+  z-index:0;
+  
+}
+.logo {
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Allow the left side to take up available space */
+}
+.logo a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  font-size: 5em; 
+  
+}
+
+.logo a:hover {
+  color: rgb(255, 255, 255);
+ }
+
+
+ nav-center {
+  
+  justify-content: space-between; /* Space items equally */
+  background-color: #ffffff00; /* Dark background */
+  align-items: flex-end; /* Vertically center items */
+  top: 0;
+  width: 100%;
+  z-index:0;
+
+
+
+}
+.nav-center {
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+
+
+.nav-center a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  font-size: 1.2em; 
+  padding: 5px 30px;
+  
+}
+
+.nav-center a:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 1.2em; 
+ }
+
+
+h1{
+  
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3em;
+  /* padding: 40px; */
+  /* padding-bottom: 20; */
+  color: rgb(255, 255, 255);
+  /* top: 20px; */
+  right: 50px;
+  /* background-color:aqua; */
+}
+h2{
+  margin: 0; /* Reset the margin to remove any default spacing */
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  text-align: left;
+  /* padding: 15px; */
+  color: white; /* Color of the title */
+  font-size: 2em; /* Font size */
+  text-shadow: 1px 1px 2px black; /* Optional shadow for better visibility */
+}
+h3{  
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  color: white;
+  font-size: 2em; /* Font size */
+  z-index: 0;
+}
+
+
+
+p{
+  font-family: 'Courier New', Courier, monospace;
+  color:white;
+  font-size: 1em;
+}
+p1{
+  font-family: 'Courier New', Courier, monospace;
+  color:white;
+  font-size: 1em;
+  font-weight: 900;
+}
+.link {
+  color: #ffffff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.link:hover {
+  text-decoration: underline; /* Underline on hover */
+  font-size: 1em;
+  font-weight: 500;
+  color: #ffffff; /* Change color on hover */
+}
+  /* Outer scrollable container */
+
+/* Styling for the outer scrollable container */
+.outer-scrollable-container {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  display: flex;
+  /* left: 50%; */
+  flex-direction: column; /* Stack the items vertically */
+  height: 100%;
+  width: 100%;
+  overflow-y: auto; /* Allow scrolling */
+  z-index:0;
+}
+
+.top-image-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  width: 100%; 
+  height: 90vh;
+}
+
+.top-image-container img {
+  max-width: 25%; /* Ensure the image takes up no more than its container's width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: contain;
+}
+.side-image-container {
+  display: flex;
+  justify-content: right; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  width: 50%; 
+  height: 70vh;
+  margin-bottom: 20px;
+
+}
+
+.side-image-container img {
+  max-width: 50%; /* Ensure the image takes up no more than its container's width */
+  max-height: 80%; /* Maintain aspect ratio */
+  object-fit: scale-down;
+
+}
+/* Flex container for text and image side by side */
+.content-container {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between; /* Space components evenly */
+}
+
+/* Styling for text container */
+.text-container {
+  flex: 1; /* Text takes up available space */
+  max-width: 30%; /* Limit text width to 50% */
+  left: 20%;
+  top: 0px;
+  
+}
+/* Styling for text container */
+.text-container-02 {
+  flex-wrap: wrap; /* Text takes up available space */
+  max-width: 20%; /* Limit text width to 50% */
+  left: 10%;
+
+}
+/* Styling for the image next to the text */
